@@ -45,8 +45,9 @@ form {
 }
 
 .les-fleurs-du-mal {
+  line-height: 1.5;
   background-color: white;
-  padding: 30px;
+  padding: 30px 15px;
   margin-bottom: 30px;
   text-align: left;
 }
