@@ -1,5 +1,9 @@
 function displayPoem(response) {
-  new Typewriter("#les-fleurs-du-mal", {
+  const poemSection = document.querySelector("#les-fleurs-du-mal");
+
+  // 💡 Add the class that triggers the top margin
+  poemSection.classList.add("generated");
+  new Typewriter(poemSection, {
     strings: response.data.answer,
     autoStart: true,
     delay: 40,
@@ -16,7 +20,9 @@ function handleSubmit(event) {
     "You are a romantic poem expert who loves writing short poems. Your mission is to generate a 6-line poem and separate each line with a <br />. Make sure to follow the user's instructions carefully. Do not include a title in the poem. Add one emoji based on the user's instruction.";
   let prompt = `User instructions: Generate a French poem about ${inspirationInput}`;
   let api_url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${api_key}`;
-
+  let hints = document.querySelector(".hint");
+  // hints.style.display="none"
+  hints.innerHTML = "";
   let initialPoemSection = document.querySelector("#les-fleurs-du-mal");
   initialPoemSection.innerHTML =
     "🌸 Génération de votre poème en cours, veuillez patienter…";

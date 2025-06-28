@@ -100,6 +100,10 @@ p {
   margin-bottom: 1rem;
 }
 
+#les-fleurs-du-mal.generated {
+  margin-top: 2rem; /* or any spacing you want */
+}
+
 /* Footer */
 footer {
   margin-top: 3rem;
