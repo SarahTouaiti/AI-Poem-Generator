@@ -7,31 +7,79 @@
     <title>AI French Poem Generator</title>
   </head>
   <body>
-    <h1>Le Jardin des Muses Françaises</h1>
-    <form>
-      <input
-        type="text"
-        placeholder="Saisissez votre inspiration ici…"
-        required
-        autofocus
-      />
-      <input type="submit" value="Envoyer" />
-    </form>
+    <div class="container">
+      <header>
+        <h1>Le Jardin des Muses Françaises</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Saisissez votre inspiration ici…"
+            class="inspiration"
+            required
+            autofocus
+          />
+          <input type="submit" value="Envoyer" class="submit-button" />
+        </form>
+        <section class="les-fleurs-du-mal">
+          <article>
+            <h3>🌹<em>L'Albatros</em></h3>
+            <blockquote>
+              <p>« Ses ailes de géant l'empêchent de marcher. »</p>
+            </blockquote>
+            <p>
+              Ce vers exprime le malaise du poète dans le monde, comparé à un
+              albatros majestueux dans les airs mais maladroit sur terre.
+            </p>
+          </article>
 
-    <footer>
-      This AI project, coded by
-      <a
-        href="https://www.shecodes.io/graduates/156755-sara-touaiti"
-        target="_blank"
-        >Sara Touaiti</a
-      >, is open source on
-      <a
-        href="https://github.com/SarahTouaiti/AI-Poem-Generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on Netlify.
-    </footer>
+          <article>
+            <h3>🕯️<em>Correspondances</em></h3>
+            <blockquote>
+              <p>
+                « La Nature est un temple où de vivants piliers<br />
+                Laissent parfois sortir de confuses paroles ; »
+              </p>
+            </blockquote>
+            <p>
+              Ce poème illustre l'idée que le monde est un ensemble de symboles
+              mystérieux à interpréter, une idée centrale du symbolisme.
+            </p>
+          </article>
+
+          <article>
+            <h3>💀 <em>Au Lecteur</em> (poème d'ouverture)</h3>
+            <blockquote>
+              <p>
+                « C'est l'Ennui ! — l'œil chargé d'un pleur involontaire,<br />
+                Il rêve d'échafauds enfumant son houka. »
+              </p>
+              <p>« — Hypocrite lecteur, — mon semblable, — mon frère ! »</p>
+            </blockquote>
+            <p>
+              Ce dernier vers est particulièrement célèbre pour sa provocation
+              et sa connivence directe avec le lecteur.
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        This AI project, coded by
+        <a
+          href="https://www.shecodes.io/graduates/156755-sara-touaiti"
+          target="_blank"
+          >Sara Touaiti</a
+        >, is open source on
+        <a
+          href="https://github.com/SarahTouaiti/AI-Poem-Generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on Netlify.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
