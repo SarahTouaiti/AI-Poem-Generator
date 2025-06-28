@@ -1,66 +1,129 @@
 body {
-  background-color: #f9f7fe;
-  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: #fdf6e3;
+  color: #4b3b2a;
+  line-height: 1.7;
+  background-image: linear-gradient(to bottom, #fdf6e3 0%, #f6ecd7 100%);
 }
 
+/* Container for overall layout */
 .container {
-  margin: 120px auto;
-  max-width: 600px;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 240, 0.95);
+  border: 2px solid #d8c9a6;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
 }
 
-h1 {
+/* Header */
+header h1 {
   text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 1.5;
-  color: #272044;
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: #5a4736;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px #eee;
 }
 
-form {
-  padding: 30px;
-  background-color: white;
-  border-radius: 10px;
+/* Form styling */
+.poem-form {
   display: flex;
-  margin-bottom: 30px;
+  gap: 1rem;
+  margin-bottom: 0; /* No margin so hint is close below */
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 
-.inspiration {
-  border: 1px solid rgba(39, 33, 66, 0.5);
-  padding: 16px;
-  width: 80%;
-  font-size: 19px;
-  border-radius: 50px;
-  line-height: 20px;
-  color: #272044;
+.poem-form input.inspiration {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #c8bfae;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff9e9;
+  min-width: 0;
 }
 
-.submit-button {
-  margin-left: 10px;
-  background: #885df1;
+.poem-form input.submit-button {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  background-color: #c3a776;
   color: white;
   border: none;
-  width: 150px;
-  border-radius: 50px;
-  padding: 14px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.les-fleurs-du-mal {
-  line-height: 1.5;
-  background-color: white;
-  padding: 30px 15px;
-  margin-bottom: 30px;
-  text-align: left;
+.poem-form input.submit-button:hover {
+  background-color: #a88b5b;
 }
 
-footer {
+/* Hint styling */
+.hint {
+  width: 100%; /* Full width below inputs */
+  margin: 0;
+  padding-top: 4px; /* Small spacing above hint text */
   font-size: 12px;
-  text-align: center;
-  color: #272044;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 30px;
+  line-height: 1.5;
+  opacity: 0.6;
+  color: #4b3b2a;
+  font-family: Georgia, serif;
 }
 
-a {
+/* Headings and poems */
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #5e4839;
+  margin-top: 2rem;
+}
+
+em {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #c7b99e;
+  font-style: italic;
+  color: #5a4736;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #6c5a4d;
+}
+
+footer a {
+  color: #8b6d4b;
   text-decoration: none;
-  color: #885df1;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .poem-form {
+    flex-direction: column;
+  }
+
+  .poem-form input.submit-button {
+    width: 100%;
+  }
 }

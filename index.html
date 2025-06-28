@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI French Poem Generator</title>
   </head>
@@ -13,6 +14,7 @@
         <h1>Le Jardin des Muses Françaises</h1>
       </header>
       <main>
+        <div class="form-container">
         <form class="poem-form">
           <input
             type="text"
@@ -23,38 +25,40 @@
           />
           <input type="submit" value="Envoyer" class="submit-button" />
         </form>
+        <small class="hint">📜 Voici quelques inspirations : amour, fleur, aube.</small>
+      </div>
         <section id="les-fleurs-du-mal">
           <article>
-            <h3>🌹<em>L'Albatros</em></h3>
+            <h3>🌹 <em>L'Albatros</em></h3>
             <blockquote>
               <p>« Ses ailes de géant l'empêchent de marcher. »</p>
             </blockquote>
             <p>
               Ce vers exprime le malaise du poète dans le monde, comparé à un
-              albatros majestueux dans les airs mais maladroit sur terre.
+              albatros majestueux dans les airs, mais maladroit sur terre.
             </p>
           </article>
-
+        
           <article>
-            <h3>🕯️<em>Correspondances</em></h3>
+            <h3>🕯️ <em>Correspondances</em></h3>
             <blockquote>
               <p>
                 « La Nature est un temple où de vivants piliers<br />
-                Laissent parfois sortir de confuses paroles ; »
+                Laissent parfois sortir de confuses paroles. »
               </p>
             </blockquote>
             <p>
-              Ce poème illustre l'idée que le monde est un ensemble de symboles
+              Ce poème illustre l’idée que le monde est un ensemble de symboles
               mystérieux à interpréter, une idée centrale du symbolisme.
             </p>
           </article>
-
+        
           <article>
-            <h3>💀 <em>Au Lecteur</em> (poème d'ouverture)</h3>
+            <h3>💀 <em>Au Lecteur</em> (poème d’ouverture)</h3>
             <blockquote>
               <p>
-                « C'est l'Ennui ! — l'œil chargé d'un pleur involontaire,<br />
-                Il rêve d'échafauds enfumant son houka. »
+                « C’est l’Ennui — l’œil chargé d’un pleur involontaire,<br />
+                Il rêve d’échafauds enfumant son houka. »
               </p>
               <p>« Hypocrite lecteur, mon semblable, mon frère ! »</p>
             </blockquote>
@@ -64,7 +68,6 @@
             </p>
           </article>
         </section>
-      </main>
 
       <footer>
         This AI project, coded by
